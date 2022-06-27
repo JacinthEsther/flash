@@ -12,6 +12,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.assignment.ui.theme.AssignmentTheme
 import com.example.assignment.ui.theme.FrontPage
+import com.example.assignment.ui.theme.Home
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -23,7 +24,7 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colors.background
                 ) {
-                    FrontPage()
+                    Home()
                 }
             }
         }
@@ -36,6 +37,6 @@ class MainActivity : ComponentActivity() {
 @Composable
 fun DefaultPreview() {
     AssignmentTheme {
-        FrontPage()
+        Home()
     }
 }
